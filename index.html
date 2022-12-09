@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Kindly fill the following survey form with appropriate information</p>
+    </header>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Enter Your Full Name: <input type="text" name="name" id="name" placeholder="Full-name"
+                required></label>
+        <label for="email" id="email-label">Enter Your Email: <input type="email" id="email" name="email" placeholder="Email"
+                required></label>
+        <label for="age" id="number-label">Your Age (in years): <input type="number" name="age" id="number" min="14"
+                max="100" placeholder="Age (optional)"></label>
+        <label for="role">You are currently working as ?
+            <select name="menu" id="dropdown">
+                <option value="">Select a role</option>
+                <option value="1">University Student</option>
+                <option value="2">Under-graduate</option>
+                <option value="3">Working professional</option>
+            </select>
+        </label>
+        <label for="rating" class="l1">How would you rate this C language course ?
+            <label for="1" class="inline"><input type="radio" name="rating" value="Outstanding" id="1">Outstanding</label>
+            <label for="2" class="inline"><input type="radio" name="rating" value="Satisfied" id="2">Satisfied</label>
+            <label for="3" class="inline"><input type="radio" name="rating" value="Can-Improve" id="3">Can-Improve</label>
+        </label>
+        <label for="" class="l1">Which courses you are interested in the future ?
+            <label for="web" class="inline"><input type="checkbox" name="" id="web" value="web-development">Web
+                development</label>
+            <label for="android" class="inline"><input type="checkbox" name="" id="android"
+                    value="android-development">Android development</label>
+            <label for="ml" class="inline"><input type="checkbox" name="" id="ml" value="machine-learning">Machine
+                learning</label>
+            <label for="cyber" class="inline"><input type="checkbox" name="" id="cyber" value="cyber-security">Cyber
+                security</label>
+        </label>
+        <label for="textarea">
+            Any comments or suggestions ?
+            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>
